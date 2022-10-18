@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Javascript Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="quiz.js"></script>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="progress-bar"></div>
+    <div class="quiz-header">
+      <div class="heading">MCQ's Quiz</div>
+      <div class="total-q">0/0</div>
+    </div>
+    <div class="quiz-body">
+      <div class="question">
+        <ul>
+<!--          now add question you want to make quiz-->
+          <li answer-number="1">
+            <div class="q">Who has been sworn as the vice president of South Sudan?</div>
+            <button type="button">Riek Macher</button>
+            <button type="button">Abdallah hamdock</button>
+            <button type="button">Salva Kiir Mayardit</button>
+            <button type="button">none</button>
+          </li>
+          <li answer-number="2">
+            <div class="q">Nuclear reaction occurs on sun</div>
+            <button type="button">Fission</button>
+            <button type="button">Fusion</button>
+            <button type="button">Both A and B</button>
+            <button type="button">None of above</button>
+          </li>
+          <li answer-number="3">
+            <div class="q">Which flower is national flower of Pakistan?</div>
+            <button type="button">Jasmine</button>
+            <button type="button">Rose</button>
+            <button type="button">Sun flower</button>
+            <button type="button">None of these</button>
+          </li>
+          <li answer-number="4">
+            <div class="q">In the composition of the earth aluminum is</div>
+            <button type="button">27.5%</button>
+            <button type="button">20.3%</button>
+            <button type="button">14.5%</button>
+            <button type="button">8.1%</button>
+          </li>
+          <li answer-number="3">
+            <div class="q">After many years Cinema houses were opened in Saudi Arabia?</div>
+            <button type="button">25 Years</button>
+            <button type="button">20 Years</button>
+            <button type="button">35 Years</button>
+            <button type="button">55 Years</button>
+          </li>
+          <li answer-number="1">
+            <div class="q">Which Country and its territories cover the most time zones</div>
+            <button type="button">France</button>
+            <button type="button">Spain</button>
+            <button type="button">Germany</button>
+            <button type="button">Greece</button>
+          </li>
+<!--          now I am adding question quickly-->
+        </ul>
+      </div>
+    </div>
+    <div class="quiz-footer">
+      <div class="timeout">Time Left: <span>20</span>s</div>
+      <button type="button" onClick="showQ()" id="showQ">Next</button>
+      <button type="button" onClick="result(true)" id="result" style="display: none">Get Result</button>
+    </div>
+  </div>
+
+</body>
+</html>

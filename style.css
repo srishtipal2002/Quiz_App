@@ -1,0 +1,120 @@
+/*  import it from google fonts or use any font*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+  background-color: #F7F7F7;
+  font-family: 'Merriweather', serif;
+}
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 700px;
+  height: auto;
+  margin: 0px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+.progress-bar {
+  height: 4px;
+  width: calc(0% - 3px);
+  background-color: white;
+  border-radius: 0px 14px 14px 0px;
+  position: absolute;
+  top: 71px;
+  border: 3px solid #022236;
+  border-left: 0px;
+  transition-duration: .4s;
+}
+.quiz-header {
+  width: 100%;
+  line-height: 76px;
+  background-color: #022236;
+  border-radius: 4px 4px 0px 0px;
+  color: white;
+  font-size: 25px;
+}
+.quiz-header .heading {
+  display: inline-block;
+  margin-left: 40px;
+}
+.quiz-header .total-q {
+  float: right;
+  display: inline-block;
+  margin-right: 40px;
+}
+.question ul li {
+  list-style: none;
+  display: none;
+}
+/*  it will show the first question by default*/
+.question ul li:first-child {
+  display: block;
+}
+.question .q {
+  font-size: 20px;
+  margin: 30px 40px 20px 0px;
+}
+.question button {
+  display: block;
+  width: 280px;
+  text-align: left;
+  padding-left: 10px;
+  height: 33px;
+  margin: 10px 50px 10px 0px;
+  border: 1px solid #91D2FA;
+  background-color: rgba(0,0,0,0.00);
+  border-radius: 3px;
+  transition-duration: .2s;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.question button:hover {
+  color: white;
+  background-color: #022236;
+  border: 1px solid #022236;
+}
+.question button:focus {
+  outline: none;
+}
+.quiz-footer {
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+  line-height: 75px;
+  margin-top: 30px;
+}
+.quiz-footer .timeout {
+  display: inline-block;
+  margin-left: 35px;
+}
+.quiz-footer .timeout span {
+  font-size: 25px;
+}
+.quiz-footer button {
+  display: inline-block;
+  float: right;
+  margin-top: 22px;
+  margin-right: 38px;
+  background-color: #022236;
+  border: 0px;
+  color: white;
+  padding: 8px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.question button.correct {
+  border: 1px solid green;
+  background-color: rgba(0, 243, 0, .50);
+}
+.question button.wrong {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, .50);
+}
+@media screen and (max-width: 715px){
+  .container {
+    width: 95%;
+  }
+}

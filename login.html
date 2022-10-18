@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        .cont{
+            margin : auto;
+            top : 6rem;
+            width: 80%;
+            height: 60vh;
+            text-align: center;
+            display: flex;
+            /* padding: 4rem; */
+            border : 4px solid black;
+        }
+        .image{
+            height : 100%;
+            width : 100%;
+
+        }
+        .right{
+            height: 80%;
+            width: 50%;
+            flex: 1;
+            padding : 3rem;
+            justify-content: center;
+            align-items: center;
+            /* border-right : 1px solid black; */
+        }
+        .left{
+            height: 100%;
+            width: 50%;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .part{
+            border : 1px solid black;
+            height : 60%;
+            margin-top: 6rem;
+        }
+        .ent{
+            /* padding-top: 4rem; */
+            margin : 2rem;
+            border-radius: 10px;
+            
+        }
+        
+        form{
+            padding : 8rem;
+        }
+        .entry{
+            border-radius: 10px;
+            height : 2rem;
+            width : 15rem;
+            background-color: white;
+            /* color : white; */
+            padding : 0.5rem;
+        }
+
+        .ent :hover{
+            border : 2px solid #37ccc0;
+        }
+        .blue{
+            background-color: #37ccc0;
+            border : 2px solid #37ccc0;
+        }
+        .space{
+            height : 8rem; 
+        }
+       
+       
+        #btn{
+            cursor : pointer;
+
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="space"></div>
+    <div class="cont">
+        <div class="right">
+            <img class = "image" src = "img.jpg">
+        </div>
+        <div class="part"></div>
+        <div class="left">
+            <form action = "index.html">
+                <div class="ent">
+                    <input type="text" id = "name" class = "entry" placeholder="Enter Your Name">
+                </div>
+                <div class="ent">
+                    <input type="number" id = "roll" class = "entry" placeholder="Enter Your Roll Number">
+                </div>
+
+                <div class="ent">
+                    <input type="submit" class = "entry blue" id = "btn" value = "Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
